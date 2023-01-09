@@ -1,1 +1,1 @@
-# rp-junit5-gradle-integrations
+# rp-junit5-integrations
