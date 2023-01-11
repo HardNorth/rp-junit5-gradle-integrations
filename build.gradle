@@ -43,7 +43,10 @@ dependencies {
     testImplementation 'org.slf4j:slf4j-api:2.0.6'
     testImplementation 'ch.qos.logback:logback-classic:1.4.5'
     testImplementation 'org.aspectj:aspectjweaver:1.9.2'
+
+    // Other
     testImplementation 'org.awaitility:awaitility:4.2.0'
+    testImplementation 'com.ibm.icu:icu4j:67.1'
 }
 
 test {

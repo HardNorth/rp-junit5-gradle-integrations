@@ -98,11 +98,18 @@
             <version>1.4.5</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- Other -->
         <dependency>
             <groupId>org.awaitility</groupId>
             <artifactId>awaitility</artifactId>
             <version>4.2.0</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.ibm.icu</groupId>
+            <artifactId>icu4j</artifactId>
+            <version>67.1</version>
         </dependency>
 
     </dependencies>
