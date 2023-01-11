@@ -18,7 +18,6 @@ package com.epam.reportportal.example.junit5.logging;
 
 import com.epam.reportportal.listeners.ListenerParameters;
 import com.epam.reportportal.service.Launch;
-import io.reactivex.Maybe;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;

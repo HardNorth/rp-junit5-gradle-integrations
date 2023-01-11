@@ -21,7 +21,6 @@ import com.epam.reportportal.message.ReportPortalMessage;
 import com.epam.reportportal.message.TypeAwareByteSource;
 import com.epam.reportportal.service.ReportPortal;
 import com.epam.reportportal.utils.files.Utils;
-import com.google.common.io.Files;
 import org.awaitility.Awaitility;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;

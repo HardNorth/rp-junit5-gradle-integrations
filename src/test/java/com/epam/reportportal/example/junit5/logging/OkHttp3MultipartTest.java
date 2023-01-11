@@ -26,7 +26,6 @@ import com.epam.reportportal.utils.files.Utils;
 import com.epam.ta.reportportal.ws.model.Constants;
 import io.reactivex.Maybe;
 import okhttp3.*;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -85,9 +84,7 @@ public class OkHttp3MultipartTest {
 				)
 				.addFormDataPart(Constants.LOG_REQUEST_BINARY_PART,
 						"pug.jpg",
-						RequestBody.create(Utils.getFile(new File("pug/lucky.jpg")).read(),
-								MediaType.get("image/jpeg")
-						)
+						RequestBody.create(Utils.getFile(new File("pug/lucky.jpg")).read(), MediaType.get("image/jpeg"))
 				)
 				.build();
 		String baseUrl = parameters.getBaseUrl();

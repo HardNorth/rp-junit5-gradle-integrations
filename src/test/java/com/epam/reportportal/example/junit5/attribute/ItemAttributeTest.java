@@ -54,7 +54,8 @@ public class ItemAttributeTest {
 
 	@Test
 	@Attributes(attributes = { @Attribute(key = "key1", value = "value1"),
-			@Attribute(key = "key2", value = "value2") }, multiKeyAttributes = { @MultiKeyAttribute(keys = { "k1", "k2" }, value = "v") })
+			@Attribute(key = "key2", value = "value2") }, multiKeyAttributes = {
+			@MultiKeyAttribute(keys = { "k1", "k2" }, value = "v") })
 	public void sixth() {
 		Assertions.assertEquals(1, 1);
 	}
