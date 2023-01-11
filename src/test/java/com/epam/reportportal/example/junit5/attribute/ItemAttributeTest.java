@@ -20,9 +20,6 @@ import com.epam.reportportal.annotations.attribute.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-/**
- * @author <a href="mailto:ivan_budayeu@epam.com">Ivan Budayeu</a>
- */
 public class ItemAttributeTest {
 
 	@Test
