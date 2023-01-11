@@ -16,43 +16,24 @@
 
 package com.epam.reportportal.example.junit5.step;
 
-import com.epam.reportportal.annotations.ParameterKey;
 import com.epam.reportportal.annotations.Step;
 import com.ibm.icu.text.RuleBasedNumberFormat;
-import org.junit.jupiter.api.DynamicTest;
-import org.junit.jupiter.api.TestFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.Locale;
-import java.util.stream.Stream;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
-import static org.junit.jupiter.api.DynamicTest.dynamicTest;
 
-public class NestedStepsWithDynamicTest {
-	private static final Logger LOGGER = LoggerFactory.getLogger(NestedStepsWithDynamicTest.class);
+public class TestNumbers {
+	private static final Logger LOGGER = LoggerFactory.getLogger(TestNumbers.class);
 
 	private final int number;
 	private String actualResult;
 	private final String expectedResult;
 
-	@TestFactory
-	Stream<DynamicTest> testDynamicTests() {
-		return Stream.of(
-				dynamicTest("Test one", () -> new NestedStepsWithDynamicTest(1, "one").testNumberConversion()),
-				dynamicTest("Test two", () -> new NestedStepsWithDynamicTest(2, "two").testNumberConversion()),
-				dynamicTest("Test three", () -> new NestedStepsWithDynamicTest(3, "three").testNumberConversion()),
-				dynamicTest("Test four", () -> new NestedStepsWithDynamicTest(4, "four").testNumberConversion()),
-				dynamicTest("Test five", () -> new NestedStepsWithDynamicTest(5, "five").testNumberConversion()),
-				dynamicTest("Test six", () -> new NestedStepsWithDynamicTest(6, "six").testNumberConversion()),
-				dynamicTest("Test seven", () -> new NestedStepsWithDynamicTest(7, "seven").testNumberConversion()),
-				dynamicTest("Test eight", () -> new NestedStepsWithDynamicTest(8, "eight").testNumberConversion())
-		);
-	}
-
-	public NestedStepsWithDynamicTest(@ParameterKey("input") int num, @ParameterKey("expected_result") String numWord) {
+	public TestNumbers(int num, String numWord) {
 		number = num;
 		expectedResult = numWord;
 	}
