@@ -22,6 +22,7 @@
         <appender-ref ref="RP"/>
     </logger>
 
+    <!-- Mute internal ReportPortal messages -->
     <logger name="com.epam.reportportal.service" level="WARN"/>
     <logger name="com.epam.reportportal.utils" level="WARN"/>
     <!-- <logger name="com.codeborne.selenide" level="WARN"/> -->
