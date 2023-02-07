@@ -29,8 +29,8 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
 /**
- * A basic example which logs Selenide actions as nested steps into Report Portal. Fails intentionally, to show screenshot, page source and
- * Selenium log attach.
+ * A basic example which logs Selenide actions as nested steps into Report Portal. Fails intentionally,
+ * to show screenshot, page source and Selenium log attach.
  */
 public class SelenideLoggingTest {
 
