@@ -48,4 +48,11 @@ public class TestCaseIdTest {
 	public void parametrizedTestWithoutKey(String testCaseId, Integer expected, Integer evaluated) {
 		Assertions.assertEquals(expected, evaluated);
 	}
+
+	@TestCaseId("{method}-{0}")
+	@ParameterizedTest
+	@MethodSource("data")
+	public void parametrizedTestTemplate(String testCaseId, Integer expected, Integer evaluated) {
+		Assertions.assertEquals(expected, evaluated);
+	}
 }
